@@ -14,7 +14,7 @@ with Path("requirements.txt").open() as requirements_txt:
 
 setup(
     name="python-adjust",
-    version="1.0.1",
+    version="1.0.2",
     packages=["adjustapi"],
     description="Adjust.com REST API python implementation",
     long_description=long_description,
