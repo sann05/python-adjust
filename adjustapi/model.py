@@ -74,6 +74,7 @@ class App:
     platforms: dict
     permissions: Permissions
     currency: Currency
+    is_ctv: Optional[bool]
 
 
 @dataclass
