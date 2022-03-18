@@ -81,7 +81,7 @@ class App:
 class AppsResponse:
     apps: List[App]
     urls: Optional[dict]
-
+    page: Optional[dict]
 
 def parse_apps(resp):
     apps = AppsResponse.Schema().load(resp.json()).apps
