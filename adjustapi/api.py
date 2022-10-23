@@ -204,9 +204,7 @@ class KpiAdjustApi(_Api):
             url += '.csv'
             response = self._get(url, self._get_params())
             response.raise_for_status()
-            return pd.read_csv(StringIO(''.join(
-                [i for i in response.text if ord(i) < 128]
-            )))
+            return pd.read_csv(StringIO(response.text[3:]))
         else:
             response = self._get(url, self._get_params())
             return parse_kpi(response)
