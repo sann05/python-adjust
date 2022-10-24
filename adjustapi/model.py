@@ -75,6 +75,7 @@ class App:
     permissions: Permissions
     currency: Currency
     is_ctv: Optional[bool]
+    is_child_directed: Optional[bool]
 
 
 @dataclass
