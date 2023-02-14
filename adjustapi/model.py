@@ -76,7 +76,7 @@ class App:
     currency: Currency
     is_ctv: Optional[bool]
     is_child_directed: Optional[bool]
-
+    fraud_prevention_settings: Optional[dict]
 
 @dataclass
 class AppsResponse:
